@@ -67,7 +67,7 @@ const ProjectCard = ({props}) => {
 const Works = () => {
   return (
     <>
-      <div id='projects' className='mb-20'>
+      <div id='projects'>
 
       </div>
       <motion.div variants={textVariant()}>
