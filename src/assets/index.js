@@ -42,6 +42,7 @@ import tripguide from "./tripguide.png";
 import cells from "./cells.png";
 import sales from "./sales.png";
 import notes from "./notes.png";
+import personal_website from "./personal_website.png";
 
 export {
   java,
@@ -83,5 +84,6 @@ export {
   php,
   cells,
   sales,
-  notes
+  notes,
+  personal_website
 };

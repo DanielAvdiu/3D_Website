@@ -29,7 +29,8 @@ import {
     php,
     cells,
     sales,
-    notes
+    notes,
+    personal_website
   } from "../assets";
   
   export const navLinks = [
@@ -45,10 +46,10 @@ import {
       id: "projects",
       title: "Projects",
     },
-    {
-      id: "research",
-      title: "Research"
-    },
+    // {
+    //   id: "research",
+    //   title: "Research"
+    // },
     {
       id: "contact",
       title: "Contact",
@@ -191,7 +192,7 @@ import {
         },
       ],
       image: cells,
-      source_code_link: "https://github.com/DanielAvdiu",
+      source_code_link: "https://github.com/DanielAvdiu/Image_Processing_With_Machine_Learning",
     },
     {
       name: "Data Visualizer",
@@ -212,7 +213,7 @@ import {
         },
       ],
       image: sales,
-      source_code_link: "https://github.com/DanielAvdiu",
+      source_code_link: "https://github.com/DanielAvdiu/Data_Visualizer",
     },
     {
       name: "3D Website with Three.js",
@@ -232,8 +233,8 @@ import {
           color: "pink-text-gradient",
         },
       ],
-      image: tripguide,
-      source_code_link: "https://github.com/DanielAvdiu",
+      image: personal_website,
+      source_code_link: "https://github.com/DanielAvdiu/3D_Website",
     },
 
     {
@@ -255,49 +256,49 @@ import {
         },
       ],
       image: notes,
-      source_code_link: "https://github.com/DanielAvdiu",
+      source_code_link: "https://github.com/DanielAvdiu/note_keeper_react_js",
     },
 
-    {
-      name: "Huffman Encoding Algorithm",
-      description:
-        "Huffman Encoding Algorithm implemented using C++ and Python. The algorithm intends to use shorter binary code for the most repeated characters.",
-      tags: [
-        {
-          name: "C++",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "Python",
-          color: "green-text-gradient",
-        },
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/DanielAvdiu",
-    },
+    // {
+    //   name: "Huffman Encoding Algorithm",
+    //   description:
+    //     "Huffman Encoding Algorithm implemented using C++ and Python. The algorithm intends to use shorter binary code for the most repeated characters.",
+    //   tags: [
+    //     {
+    //       name: "C++",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "Python",
+    //       color: "green-text-gradient",
+    //     },
+    //   ],
+    //   image: tripguide,
+    //   source_code_link: "https://github.com/DanielAvdiu",
+    // },
 
-    {
-      name: "Store Management System",
-      description:
-        "Store management system in the form of a desktop application. The project is implemented using Java, JavaFX and CSS for styling. ",
-      tags: [
-        {
-          name: "Java",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "JavaFX",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "CSS",
-          color: "green-text-gradient",
-        },
+    // {
+    //   name: "Store Management System",
+    //   description:
+    //     "Store management system in the form of a desktop application. The project is implemented using Java, JavaFX and CSS for styling. ",
+    //   tags: [
+    //     {
+    //       name: "Java",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "JavaFX",
+    //       color: "blue-text-gradient",
+    //     },
+    //     {
+    //       name: "CSS",
+    //       color: "green-text-gradient",
+    //     },
 
-      ],
-      image: tripguide,
-      source_code_link: "https://github.com/DanielAvdiu",
-    },
+    //   ],
+    //   image: tripguide,
+    //   source_code_link: "https://github.com/DanielAvdiu",
+    // },
   ];
   
   export { services, technologies, experiences, projects };

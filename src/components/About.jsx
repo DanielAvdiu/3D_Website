@@ -45,7 +45,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='justify-center items-center mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='justify-center items-center mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify'
       >
         I am an incredibly driven individual actively seeking fresh opportunities in the realm of 
         software engineering. With a robust skill set encompassing Java, Python, and JavaScript, I am 
