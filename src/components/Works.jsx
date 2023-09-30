@@ -7,10 +7,13 @@ import { github } from '../assets';
 import { projects } from '../constants';
 import { fadeIn, textVariant} from '../utils/motion';
 
-const ProjectCard = ({index, name, description, tags, image, sourceCode_link}) => {
+const ProjectCard = ({props}) => {
+  const {index, name, description, tags, image, source_code_link} = props;
   return(
     <motion.div
+        onClick={()=>window.open(source_code_link, "_blank")}
         variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+        className='cursor-pointer'
     >
       <Tilt 
         options={{
@@ -23,11 +26,37 @@ const ProjectCard = ({index, name, description, tags, image, sourceCode_link}) =
       >
 
         <div className='relative w-full h-[230px]'>
+          <img src={image} alt={name} 
+            className='w-full h-full object-cover rounded-2xl'
+          />
 
+          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+
+            <div 
+              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+            >
+              <img src={github} alt="github"
+                    className='w-1/2 h-1/2 object-contain'
+              />
+            </div>
+
+          </div>
         </div>
 
+        {/* For the name and the description of the project */}
+        <div className='mt-5'>
+          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
+          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+        </div>
 
-
+        {/* For the tags of the project */}
+        <div className='mt-4 flex flex-wrap gap-2'>
+          {tags.map((tag)=>(
+            <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+              #{tag.name}
+            </p>
+          ))}
+        </div>
       </Tilt>
     </motion.div>
   )
@@ -35,12 +64,12 @@ const ProjectCard = ({index, name, description, tags, image, sourceCode_link}) =
 }
 
 
-
-
-
 const Works = () => {
   return (
     <>
+      <div id='projects' className='mb-20'>
+
+      </div>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>
           My Projects
@@ -55,26 +84,22 @@ const Works = () => {
         <motion.p variants={fadeIn("", "", 0.1, 1)}
                   className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Soluta voluptatem at voluptatibus ipsum excepturi voluptate 
-          nulla eligendi facere? Quis recusandae facere cupiditate fuga 
-          quo alias asperiores eaque provident autem excepturi!
+          Below are some of teh projects I have worked on. They range from web development
+          to machine learning and data science. The are several programming languages used in these
+          projects because I am always opened to learning new technologies.
 
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-          Nobis, sit! Hic accusamus soluta eos? Similique eius beatae, 
-          saepe molestias minus impedit! Eveniet necessitatibus dolore 
-          quaerat esse velit numquam tempore similique?
+          In order to access the source code of the projects, click on the github icon on the top right.
 
         </motion.p>
       </div>
 
       {/* Project Cards for the projects */}
       <div className='mt-20 flex flex-wrap gap-7'>
-
         {projects.map((project, index) => (
           <ProjectCard 
+
           key={`project-${index}`}
-          {...project}
+          props={project}
           index={index}
           />
 

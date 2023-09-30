@@ -51,7 +51,7 @@ const Navbar = () => {
 
   return (
     <nav id='the_only_element' className={`${styles.paddingX}
-    w-full flex items-center py-5 fixed top-0 z-20
+    w-full flex items-center py-3 fixed top-0 z-20
     `} style={navbarStyle}>
 
       <div className="w-full flex justify-between items-center max-w-7x1 mx-auto">
@@ -59,13 +59,6 @@ const Navbar = () => {
           setActive("");
           window.scrollTo(0, 0);
         }}>
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex">
-            Daniel &nbsp;
-            <span className="sm:block hidden">
-              JavaScript Mastery</span>
-          </p>
-
 
         </Link>
 
@@ -89,7 +82,7 @@ const Navbar = () => {
             onClick={() => setToggle(!toggle)}
           />
 
-          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 black-gradient absolute top-20 right-0 max-4 my-2 min-w-[140px] z-10 rounded-xl`}>
+          <div className={`${!toggle ? 'hidden' : 'flex'} p-6 black-gradient absolute top-20 right-0 max-4 my-2 min-w-[550px] z-10 rounded-xl`}>
             <ul className='list-none flex justify-end items-start flex-col gap-4'>
               {navLinks.map((link) => (
                 <li

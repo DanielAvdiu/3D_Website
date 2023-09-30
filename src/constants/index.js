@@ -4,25 +4,32 @@ import {
     creator,
     web,
     javascript,
-    typescript,
     html,
     css,
     reactjs,
-    redux,
     tailwind,
     nodejs,
     mongodb,
     git,
-    figma,
     docker,
-    meta,
-    starbucks,
+    unity,
+    net,
+    cplusplus,
     tesla,
     shopify,
     carrent,
     jobit,
     tripguide,
     threejs,
+    java,
+    python,
+    sql,
+    cnormal,
+    json,
+    php,
+    cells,
+    sales,
+    notes
   } from "../assets";
   
   export const navLinks = [
@@ -33,6 +40,14 @@ import {
     {
       id: "work",
       title: "Work",
+    },
+    {
+      id: "projects",
+      title: "Projects",
+    },
+    {
+      id: "research",
+      title: "Research"
     },
     {
       id: "contact",
@@ -46,7 +61,7 @@ import {
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Frontend Developer",
       icon: mobile,
     },
     {
@@ -54,12 +69,24 @@ import {
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Researcher",
       icon: creator,
     },
   ];
   
   const technologies = [
+    {
+      name: "Java",
+      icon: java,
+    },
+    {
+      name: "Python",
+      icon: python,
+    },
+    {
+      name: "SQL",
+      icon: sql,
+    },
     {
       name: "HTML 5",
       icon: html,
@@ -73,16 +100,8 @@ import {
       icon: javascript,
     },
     {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
       name: "React JS",
       icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
     },
     {
       name: "Tailwind CSS",
@@ -105,10 +124,6 @@ import {
       icon: git,
     },
     {
-      name: "figma",
-      icon: figma,
-    },
-    {
       name: "docker",
       icon: docker,
     },
@@ -116,150 +131,173 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "VR/AR Intern",
+      company_name: "Epoka University",
+      icon: unity,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "Oct 2022 - April 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Understanding the fundamentals of VR/AR development and design.",
+        "Utilizing Render for 3D models and Oculus VR headset for testing.",
+        "Programming simple projects with Unity and C#",
+        "Participating in code reviews and providing constructive feedback in teams",
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "Programming Tutor",
+      company_name: "Epoka University",
+      icon: cplusplus,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "Oct 2022 - Mar 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Providing in-person and online tutoring to students in programming courses.",
+        "Creating study plans for the students and helping them to achieve their goals.",
+        "Identifiying weak areas of the students and helping them to improve.",
+        "Developing simple projects with the students.",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      title: ".NET/C# Intern",
+      company_name: "Kreatx",
+      icon: net,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "Feb 2023 - Mar 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Understanding the fundamentals of .NET.",
+        "Completing tasks with .NET using Microsoft Sql Server.",
+        "Implementing Rest API services with .NET and C#.",
+        "Understanding the difference between the MVC architecture and Rest API architecture.",
       ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
-      iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-  ];
-  
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
   
   const projects = [
     {
-      name: "Car Rent",
+      name: "Image Processing with Machine Learning",
       description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+        "Cell image segmentation using machine learning with deep neural networks. The project is implemented with Python and the dataset is publicly available. Several modified structures have been proposed ",
       tags: [
         {
-          name: "react",
+          name: "python",
           color: "blue-text-gradient",
         },
         {
-          name: "mongodb",
+          name: "tensorflow",
           color: "green-text-gradient",
         },
         {
-          name: "tailwind",
+          name: "image-processing",
           color: "pink-text-gradient",
         },
       ],
-      image: carrent,
-      source_code_link: "https://github.com/",
+      image: cells,
+      source_code_link: "https://github.com/DanielAvdiu",
     },
     {
-      name: "Job IT",
+      name: "Data Visualizer",
       description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+        "Data Visualizer implemented with Streamlit. Using an excel file with data, we can simply visualize the data with different types of graphs. The project is implemented using Streamlit. ",
       tags: [
         {
-          name: "react",
+          name: "python",
           color: "blue-text-gradient",
         },
         {
-          name: "restapi",
+          name: "streamlit",
           color: "green-text-gradient",
         },
         {
-          name: "scss",
+          name: "data-visualization",
           color: "pink-text-gradient",
         },
       ],
-      image: jobit,
-      source_code_link: "https://github.com/",
+      image: sales,
+      source_code_link: "https://github.com/DanielAvdiu",
     },
     {
-      name: "Trip Guide",
+      name: "3D Website with Three.js",
       description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+        "A 3D website implemented with Three.js. The website is implemented with React.js and Three.js. The website is responsive and can be used on mobile devices. ",
       tags: [
         {
-          name: "nextjs",
+          name: "React.js",
           color: "blue-text-gradient",
         },
         {
-          name: "supabase",
+          name: "Three.js",
           color: "green-text-gradient",
         },
         {
-          name: "css",
+          name: "Tailwind CSS",
           color: "pink-text-gradient",
         },
       ],
       image: tripguide,
-      source_code_link: "https://github.com/",
+      source_code_link: "https://github.com/DanielAvdiu",
+    },
+
+    {
+      name: "Note Keeper with React.js",
+      description:
+        "A simple note keeper implemented with React.js. The website is responsive and can be used on mobile devices. The website is implemented with React.js and Tailwind CSS. The project represents a note keeping website ",
+      tags: [
+        {
+          name: "React.js",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Json Server",
+          color: "green-text-gradient",
+        },
+        {
+          name: "Tailwind CSS",
+          color: "pink-text-gradient",
+        },
+      ],
+      image: notes,
+      source_code_link: "https://github.com/DanielAvdiu",
+    },
+
+    {
+      name: "Huffman Encoding Algorithm",
+      description:
+        "Huffman Encoding Algorithm implemented using C++ and Python. The algorithm intends to use shorter binary code for the most repeated characters.",
+      tags: [
+        {
+          name: "C++",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "Python",
+          color: "green-text-gradient",
+        },
+      ],
+      image: tripguide,
+      source_code_link: "https://github.com/DanielAvdiu",
+    },
+
+    {
+      name: "Store Management System",
+      description:
+        "Store management system in the form of a desktop application. The project is implemented using Java, JavaFX and CSS for styling. ",
+      tags: [
+        {
+          name: "Java",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "JavaFX",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "green-text-gradient",
+        },
+
+      ],
+      image: tripguide,
+      source_code_link: "https://github.com/DanielAvdiu",
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects };

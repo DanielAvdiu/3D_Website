@@ -16,7 +16,7 @@ const Hero = () => {
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm <span className="text-[#915eff]">Daniel</span></h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, user <br className="sm:block hidden" />interfaces and web applications
+            I am a Software Engineer <br className="sm:block hidden" />with skills in Java, Python and JavaScript
           </p>
         </div>
       </div>
@@ -44,4 +44,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Hero;

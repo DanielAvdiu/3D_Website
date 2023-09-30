@@ -6,7 +6,17 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import cnormal from "./tech/cnormal.png";
+import json from "./tech/json.png";
+import php from "./tech/php.png";
 
+
+import unity from "./company/unity.png";
+import net from "./company/net.png";
+import cplusplus from "./company/cplusplus.png";
+import sql from "./tech/sql.png";
+import python from "./tech/python.png";
+import java from "./tech/java.png";
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -29,8 +39,13 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import cells from "./cells.png";
+import sales from "./sales.png";
+import notes from "./notes.png";
 
 export {
+  java,
+  python,
   logo,
   backend,
   creator,
@@ -59,4 +74,14 @@ export {
   carrent,
   jobit,
   tripguide,
+  sql, 
+  unity,
+  net,
+  cplusplus,
+  cnormal,
+  json,
+  php,
+  cells,
+  sales,
+  notes
 };
