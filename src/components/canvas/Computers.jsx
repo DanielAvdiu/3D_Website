@@ -9,7 +9,7 @@ const Computers = ({isMobile}) => {
   const computer = useGLTF('/desktop_pc/scene.gltf');
 
   return (
-    <mesh>
+    <mesh >
       <hemisphereLight intensity={2}
         groundColor="black" />
 
@@ -30,7 +30,6 @@ const Computers = ({isMobile}) => {
         scale={isMobile ? 0.5 : 0.75}
         position={isMobile ? [0, -3, -2.2]:[0, -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
-        style={{ PointerEvent: 'none' }}
       />
 
     </mesh>
@@ -77,6 +76,7 @@ const ComputersCanvas = () => {
           enableZoom={false}
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
+          enableRotate={false}
           />
 
           {/* It limits the movement of the model.
