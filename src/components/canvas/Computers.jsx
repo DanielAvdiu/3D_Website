@@ -9,7 +9,7 @@ const Computers = ({isMobile}) => {
   const computer = useGLTF('/desktop_pc/scene.gltf');
 
   return (
-    <mesh >
+    <mesh className='touch-none click-none select-none'>
       <hemisphereLight intensity={2}
         groundColor="black" />
 
@@ -57,12 +57,15 @@ const ComputersCanvas = () => {
     };
   }, []);
 
+  
+
   return (
     <Canvas
       frameloop="demand"
       shadows
       camera={{ position: [20, 3, 5], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
+      className='touch-none click-none select-none'
     >
 
       {/* Not from Three.js. It comes from react
