@@ -84,7 +84,7 @@ const Works = () => {
         <motion.p variants={fadeIn("", "", 0.1, 1)}
                   className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px] text-justify'
         >
-          Below are some of teh projects I have worked on. They range from web development
+          Below are some of the projects I have worked on. They range from web development
           to machine learning and data science. The are several programming languages used in these
           projects because I am always opened to learning new technologies.
 
